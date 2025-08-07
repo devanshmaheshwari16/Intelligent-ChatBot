@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intelligent ChatBot - HTML Structure</title>
+    <link rel="stylesheet" href="chatbot.css">
+</head>
+<body>
+    <div class="chatbot-container">
+        <div class="chatbot-header">
+            <h1>🤖 Intelligent ChatBot</h1>
+            <div class="status">
+                <div class="status-dot"></div>
+                <span>Python AI Powered</span>
+            </div>
+        </div>
+
+        <div class="chat-area" id="chatArea">
+            <div class="welcome-card">
+                <h3>👋 Welcome to AI Assistant!</h3>
+                <p>Ask me about courses, programming, or career guidance</p>
+                <div class="quick-buttons">
+                    <button class="quick-btn" onclick="sendQuick('What courses do you offer?')">📚 Courses</button>
+                    <button class="quick-btn" onclick="sendQuick('How to apply?')">📝 Admission</button>
+                    <button class="quick-btn" onclick="sendQuick('Tell me about Python')">🐍 Python</button>
+                    <button class="quick-btn" onclick="sendQuick('Career advice')">💼 Career</button>
+                </div>
+            </div>
+
+            <div class="typing-indicator" id="typingIndicator">
+                <div class="typing-dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-input-area">
+            <div class="input-container">
+                <input type="text" class="chat-input" id="chatInput" placeholder="Type your question..." maxlength="300">
+                <button class="send-btn" id="sendBtn" onclick="sendMessage()">Send</button>
+            </div>
+            <p class="footer-text">🐍 Powered by Python AI Backend</p>
+        </div>
+    </div>
+
+    <script src="chatbot.js"></script>
+</body>
+</html>
